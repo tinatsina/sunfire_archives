@@ -30,6 +30,10 @@ class Parser:
     COL_024_RED_TEAM_LEVEL = -1
     COL_025_BLUE_TEAM_CS = -1
     COL_026_RED_TEAM_CS = -1
+    COL_027_BLUE_TEAAM_CS_PER_MINUTE = -1
+    COL_028_RED_TEAAM_CS_PER_MINUTE = -1
+    COL_029_BLUE_GOLD_DIFF = -1
+    COL_030_RED_GOLD_DIFF = -1
 
     # ======================================= #
     # List and Definitions of XPath variables #
@@ -219,6 +223,24 @@ class Parser:
 
         for x in levels_temp:
             cs.append(int(x[0]))
+
+        if winning_team == self.VICTORY_BLUE_TEAM or winning_team == self.DEFEAT_BLUE_TEAM:
+            result[0] = sum(cs[:5])
+            result[1] = sum(cs[5:])
+        elif winning_team == self.VICTORY_RED_TEAM or winning_team == self.DEFEAT_RED_TEAM:
+            result[1] = sum(cs[:5])
+            result[0] = sum(cs[5:])
+
+        return result
+    
+    def get_team_total_cs_per_minute(self,winning_team,cs_list):
+        levels_temp = cs_list[1:]
+        cs = []
+        result = [-1,-1]
+
+        for x in levels_temp:
+            cs.append(float(x[1].replace("/m","")))
+
 
         if winning_team == self.VICTORY_BLUE_TEAM or winning_team == self.DEFEAT_BLUE_TEAM:
             result[0] = sum(cs[:5])
