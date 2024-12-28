@@ -34,6 +34,18 @@ class Parser:
     COL_028_RED_TEAAM_CS_PER_MINUTE = -1
     COL_029_BLUE_GOLD_DIFF = -1
     COL_030_RED_GOLD_DIFF = -1
+    COL_031_BLUE_GOLD_PER_MIN = -1
+    COL_032_RED_GOLD_PER_MIN = -1
+    COL_033_BLUE_TEAM_TOP = ""
+    COL_034_BLUE_TEAM_JNG = ""
+    COL_035_BLUE_TEAM_MID = ""
+    COL_036_BLUE_TEAM_ADC = ""
+    COL_037_BLUE_TEAM_SUP = ""
+    COL_038_RED_TEAM_TOP = ""
+    COL_039_RED_TEAM_JNG = ""
+    COL_040_RED_TEAM_MID = ""
+    COL_041_RED_TEAM_ADC = ""
+    COL_042_RED_TEAM_SUP = ""
 
     # ======================================= #
     # List and Definitions of XPath variables #
@@ -250,5 +262,22 @@ class Parser:
             result[0] = sum(cs[5:])
 
         return result
+    
+    def get_total_game_time_minutes(self,cs_list):
+        cs_temp = cs_list[1:]
+        total_game_time = int(cs_temp[0][0])
+        cs_per_minute = float(cs_temp[0][1].replace("/m",""))
 
-        
+        return total_game_time/cs_per_minute
+    
+    def get_team_champion_list(self,winning_team,champ_list):
+        temp = champ_list[1:]
+        result = [-1,-1]
+        if winning_team == self.VICTORY_BLUE_TEAM or winning_team == self.DEFEAT_BLUE_TEAM:
+            result[0] = temp[:5]
+            result[1] = temp[5:]
+        elif winning_team == self.VICTORY_RED_TEAM or winning_team == self.DEFEAT_RED_TEAM:
+            result[1] = temp[:5]
+            result[0] = temp[5:]
+    
+        return result

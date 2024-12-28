@@ -2,11 +2,13 @@
     "old_attributes":
     [
         "blueFirstBlood",
-        "blueExperienceDiff",
-        "blueGoldPerMin",
         "                                    ",
-        "redFirstBlood",
-        "redExperienceDiff",
-        "redGoldPerMin"
+        "redFirstBlood"
+    ],
+    "new attributes":
+    [
+        "red/blue_team_comp + 10",
+        "team_weapons 10*5",
+        "summoners 10*2"
     ]
 }
