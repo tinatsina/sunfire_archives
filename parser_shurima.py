@@ -171,6 +171,14 @@ class Parser:
     COL_150_RED_TEAM_SUP_SUMMONER_01 = ""
     COL_151_RED_TEAM_SUP_SUMMONER_02 = ""
 
+    COL_152_BLUE_TEAM_RIFT_HERALDS = -1
+    COL_153_BLUE_TEAM_VOID_GRUBS = -1
+    COL_154_BLUE_TEAM_INHIBITORS = -1
+
+    COL_155_RED_TEAM_RIFT_HERALDS = -1
+    COL_156_RED_TEAM_VOID_GRUBS = -1
+    COL_157_RED_TEAM_INHIBITORS = -1
+
     # ======================================= #
     # List and Definitions of XPath variables #
     # ======================================= #
