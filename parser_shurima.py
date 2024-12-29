@@ -47,6 +47,86 @@ class Parser:
     COL_041_RED_TEAM_ADC = ""
     COL_042_RED_TEAM_SUP = ""
 
+    COL_043_BLLUE_TEAM_TOP_ITEM_1 = ""
+    COL_044_BLLUE_TEAM_TOP_ITEM_2 = ""
+    COL_045_BLLUE_TEAM_TOP_ITEM_3 = ""
+    COL_046_BLLUE_TEAM_TOP_ITEM_4 = ""
+    COL_047_BLLUE_TEAM_TOP_ITEM_5 = ""
+    COL_048_BLLUE_TEAM_TOP_ITEM_6 = ""
+    COL_049_BLLUE_TEAM_TOP_ITEM_VISION = ""
+
+    COL_050_BLLUE_TEAM_JNG_ITEM_1 = ""
+    COL_051_BLLUE_TEAM_JNG_ITEM_2 = ""
+    COL_052_BLLUE_TEAM_JNG_ITEM_3 = ""
+    COL_053_BLLUE_TEAM_JNG_ITEM_4 = ""
+    COL_054_BLLUE_TEAM_JNG_ITEM_5 = ""
+    COL_055_BLLUE_TEAM_JNG_ITEM_6 = ""
+    COL_056_BLLUE_TEAM_JNG_ITEM_VISION = ""
+
+    COL_057_BLLUE_TEAM_MID_ITEM_1 = ""
+    COL_058_BLLUE_TEAM_MID_ITEM_2 = ""
+    COL_059_BLLUE_TEAM_MID_ITEM_3 = ""
+    COL_060_BLLUE_TEAM_MID_ITEM_4 = ""
+    COL_061_BLLUE_TEAM_MID_ITEM_5 = ""
+    COL_062_BLLUE_TEAM_MID_ITEM_6 = ""
+    COL_063_BLLUE_TEAM_MID_ITEM_VISION = ""
+
+    COL_064_BLLUE_TEAM_ADC_ITEM_1 = ""
+    COL_065_BLLUE_TEAM_ADC_ITEM_2 = ""
+    COL_066_BLLUE_TEAM_ADC_ITEM_3 = ""
+    COL_067_BLLUE_TEAM_ADC_ITEM_4 = ""
+    COL_068_BLLUE_TEAM_ADC_ITEM_5 = ""
+    COL_069_BLLUE_TEAM_ADC_ITEM_6 = ""
+    COL_070_BLLUE_TEAM_ADC_ITEM_VISION = ""
+
+    COL_070_BLLUE_TEAM_SUP_ITEM_1 = ""
+    COL_071_BLLUE_TEAM_SUP_ITEM_2 = ""
+    COL_072_BLLUE_TEAM_SUP_ITEM_3 = ""
+    COL_073_BLLUE_TEAM_SUP_ITEM_4 = ""
+    COL_074_BLLUE_TEAM_SUP_ITEM_5 = ""
+    COL_075_BLLUE_TEAM_SUP_ITEM_6 = ""
+    COL_076_BLLUE_TEAM_SUP_ITEM_VISION = ""
+
+    COL_077_RED_TEAM_TOP_ITEM_1 = ""
+    COL_078_RED_TEAM_TOP_ITEM_2 = ""
+    COL_079_RED_TEAM_TOP_ITEM_3 = ""
+    COL_080_RED_TEAM_TOP_ITEM_4 = ""
+    COL_081_RED_TEAM_TOP_ITEM_5 = ""
+    COL_082_RED_TEAM_TOP_ITEM_6 = ""
+    COL_083_RED_TEAM_TOP_ITEM_VISION = ""
+
+    COL_084_RED_TEAM_JNG_ITEM_1 = ""
+    COL_085_RED_TEAM_JNG_ITEM_2 = ""
+    COL_086_RED_TEAM_JNG_ITEM_3 = ""
+    COL_087_RED_TEAM_JNG_ITEM_4 = ""
+    COL_088_RED_TEAM_JNG_ITEM_5 = ""
+    COL_089_RED_TEAM_JNG_ITEM_6 = ""
+    COL_090_RED_TEAM_JNG_ITEM_VISION = ""
+
+    COL_091_RED_TEAM_MID_ITEM_1 = ""
+    COL_092_RED_TEAM_MID_ITEM_2 = ""
+    COL_093_RED_TEAM_MID_ITEM_3 = ""
+    COL_094_RED_TEAM_MID_ITEM_4 = ""
+    COL_095_RED_TEAM_MID_ITEM_5 = ""
+    COL_096_RED_TEAM_MID_ITEM_6 = ""
+    COL_097_RED_TEAM_MID_ITEM_VISION = ""
+
+    COL_098_RED_TEAM_ADC_ITEM_1 = ""
+    COL_099_RED_TEAM_ADC_ITEM_2 = ""
+    COL_100_RED_TEAM_ADC_ITEM_3 = ""
+    COL_101_RED_TEAM_ADC_ITEM_4 = ""
+    COL_102_RED_TEAM_ADC_ITEM_5 = ""
+    COL_103_RED_TEAM_ADC_ITEM_6 = ""
+    COL_104_RED_TEAM_ADC_ITEM_VISION = ""
+
+    COL_105_RED_TEAM_SUP_ITEM_1 = ""
+    COL_106_RED_TEAM_SUP_ITEM_2 = ""
+    COL_107_RED_TEAM_SUP_ITEM_3 = ""
+    COL_108_RED_TEAM_SUP_ITEM_4 = ""
+    COL_109_RED_TEAM_SUP_ITEM_5 = ""
+    COL_110_RED_TEAM_SUP_ITEM_6 = ""
+    COL_111_RED_TEAM_SUP_ITEM_VISION = ""
+
     # ======================================= #
     # List and Definitions of XPath variables #
     # ======================================= #
@@ -280,4 +360,26 @@ class Parser:
             result[1] = temp[:5]
             result[0] = temp[5:]
     
+        return result
+    
+    def get_team_item_list(self,winning_team,item_list):
+        result = [-1,-1]
+        if winning_team == self.VICTORY_BLUE_TEAM or winning_team == self.DEFEAT_BLUE_TEAM:
+            result[0] = item_list[:5]
+            result[1] = item_list[5:]
+        elif winning_team == self.VICTORY_RED_TEAM or winning_team == self.DEFEAT_RED_TEAM:
+            result[1] = item_list[:5]
+            result[0] = item_list[5:]
+    
+        return result
+    
+    def get_team_runes_list(self,winning_team,rune_list):
+        result = [-1,-1]
+        if winning_team == self.VICTORY_BLUE_TEAM or winning_team == self.DEFEAT_BLUE_TEAM:
+            result[0] = rune_list[:5]
+            result[1] = rune_list[5:]
+        elif winning_team == self.VICTORY_RED_TEAM or winning_team == self.DEFEAT_RED_TEAM:
+            result[1] = rune_list[:5]
+            result[0] = rune_list[5:]
+
         return result
