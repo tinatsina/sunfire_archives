@@ -127,27 +127,49 @@ class Parser:
     COL_110_RED_TEAM_SUP_ITEM_6 = ""
     COL_111_RED_TEAM_SUP_ITEM_VISION = ""
 
-    COL_112_BLUE_TEAM_TOP_SUMMONER_01 = ""
-    COL_113_BLUE_TEAM_TOP_SUMMONER_02 = ""
-    COL_114_BLUE_TEAM_JNG_SUMMONER_01 = ""
-    COL_115_BLUE_TEAM_JNG_SUMMONER_02 = ""
-    COL_116_BLUE_TEAM_MID_SUMMONER_01 = ""
-    COL_117_BLUE_TEAM_MID_SUMMONER_02 = ""
-    COL_118_BLUE_TEAM_ADC_SUMMONER_01 = ""
-    COL_119_BLUE_TEAM_ADC_SUMMONER_02 = ""
-    COL_120_BLUE_TEAM_SUP_SUMMONER_01 = ""
-    COL_121_BLUE_TEAM_SUP_SUMMONER_02 = ""
+    COL_112_BLUE_TEAM_TOP_RUNE_01 = ""
+    COL_113_BLUE_TEAM_TOP_RUNE_02 = ""
+    COL_114_BLUE_TEAM_JNG_RUNE_01 = ""
+    COL_115_BLUE_TEAM_JNG_RUNE_02 = ""
+    COL_116_BLUE_TEAM_MID_RUNE_01 = ""
+    COL_117_BLUE_TEAM_MID_RUNE_02 = ""
+    COL_118_BLUE_TEAM_ADC_RUNE_01 = ""
+    COL_119_BLUE_TEAM_ADC_RUNE_02 = ""
+    COL_120_BLUE_TEAM_SUP_RUNE_01 = ""
+    COL_121_BLUE_TEAM_SUP_RUNE_02 = ""
 
-    COL_122_RED_TEAM_TOP_SUMMONER_01 = ""
-    COL_123_RED_TEAM_TOP_SUMMONER_02 = ""
-    COL_124_RED_TEAM_JNG_SUMMONER_01 = ""
-    COL_125_RED_TEAM_JNG_SUMMONER_02 = ""
-    COL_126_RED_TEAM_MID_SUMMONER_01 = ""
-    COL_127_RED_TEAM_MID_SUMMONER_02 = ""
-    COL_128_RED_TEAM_ADC_SUMMONER_01 = ""
-    COL_129_RED_TEAM_ADC_SUMMONER_02 = ""
-    COL_130_RED_TEAM_SUP_SUMMONER_01 = ""
-    COL_131_RED_TEAM_SUP_SUMMONER_02 = ""
+    COL_122_RED_TEAM_TOP_RUNE_01 = ""
+    COL_123_RED_TEAM_TOP_RUNE_02 = ""
+    COL_124_RED_TEAM_JNG_RUNE_01 = ""
+    COL_125_RED_TEAM_JNG_RUNE_02 = ""
+    COL_126_RED_TEAM_MID_RUNE_01 = ""
+    COL_127_RED_TEAM_MID_RUNE_02 = ""
+    COL_128_RED_TEAM_ADC_RUNE_01 = ""
+    COL_129_RED_TEAM_ADC_RUNE_02 = ""
+    COL_130_RED_TEAM_SUP_RUNE_01 = ""
+    COL_131_RED_TEAM_SUP_RUNE_02 = ""
+
+    COL_132_BLUE_TEAM_TOP_SUMMONER_01 = ""
+    COL_133_BLUE_TEAM_TOP_SUMMONER_02 = ""
+    COL_134_BLUE_TEAM_JNG_SUMMONER_01 = ""
+    COL_135_BLUE_TEAM_JNG_SUMMONER_02 = ""
+    COL_136_BLUE_TEAM_MID_SUMMONER_01 = ""
+    COL_137_BLUE_TEAM_MID_SUMMONER_02 = ""
+    COL_138_BLUE_TEAM_ADC_SUMMONER_01 = ""
+    COL_139_BLUE_TEAM_ADC_SUMMONER_02 = ""
+    COL_140_BLUE_TEAM_SUP_SUMMONER_01 = ""
+    COL_141_BLUE_TEAM_SUP_SUMMONER_02 = ""
+
+    COL_142_RED_TEAM_TOP_SUMMONER_01 = ""
+    COL_143_RED_TEAM_TOP_SUMMONER_02 = ""
+    COL_144_RED_TEAM_JNG_SUMMONER_01 = ""
+    COL_145_RED_TEAM_JNG_SUMMONER_02 = ""
+    COL_146_RED_TEAM_MID_SUMMONER_01 = ""
+    COL_147_RED_TEAM_MID_SUMMONER_02 = ""
+    COL_148_RED_TEAM_ADC_SUMMONER_01 = ""
+    COL_149_RED_TEAM_ADC_SUMMONER_02 = ""
+    COL_150_RED_TEAM_SUP_SUMMONER_01 = ""
+    COL_151_RED_TEAM_SUP_SUMMONER_02 = ""
 
     # ======================================= #
     # List and Definitions of XPath variables #
@@ -403,5 +425,16 @@ class Parser:
         elif winning_team == self.VICTORY_RED_TEAM or winning_team == self.DEFEAT_RED_TEAM:
             result[1] = rune_list[:5]
             result[0] = rune_list[5:]
+
+        return result
+    
+    def get_team_summoner_list(self,winning_team,summoner_list):
+        result = [-1,-1]
+        if winning_team == self.VICTORY_BLUE_TEAM or winning_team == self.DEFEAT_BLUE_TEAM:
+            result[0] = summoner_list[:5]
+            result[1] = summoner_list[5:]
+        elif winning_team == self.VICTORY_RED_TEAM or winning_team == self.DEFEAT_RED_TEAM:
+            result[1] = summoner_list[:5]
+            result[0] = summoner_list[5:]
 
         return result
