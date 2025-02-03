@@ -30,6 +30,154 @@ class Parser:
     COL_024_RED_TEAM_LEVEL = -1
     COL_025_BLUE_TEAM_CS = -1
     COL_026_RED_TEAM_CS = -1
+    COL_027_BLUE_TEAAM_CS_PER_MINUTE = -1
+    COL_028_RED_TEAAM_CS_PER_MINUTE = -1
+    COL_029_BLUE_GOLD_DIFF = -1
+    COL_030_RED_GOLD_DIFF = -1
+    COL_031_BLUE_GOLD_PER_MIN = -1
+    COL_032_RED_GOLD_PER_MIN = -1
+    COL_033_BLUE_TEAM_TOP = ""
+    COL_034_BLUE_TEAM_JNG = ""
+    COL_035_BLUE_TEAM_MID = ""
+    COL_036_BLUE_TEAM_ADC = ""
+    COL_037_BLUE_TEAM_SUP = ""
+    COL_038_RED_TEAM_TOP = ""
+    COL_039_RED_TEAM_JNG = ""
+    COL_040_RED_TEAM_MID = ""
+    COL_041_RED_TEAM_ADC = ""
+    COL_042_RED_TEAM_SUP = ""
+
+    COL_043_BLLUE_TEAM_TOP_ITEM_1 = ""
+    COL_044_BLLUE_TEAM_TOP_ITEM_2 = ""
+    COL_045_BLLUE_TEAM_TOP_ITEM_3 = ""
+    COL_046_BLLUE_TEAM_TOP_ITEM_4 = ""
+    COL_047_BLLUE_TEAM_TOP_ITEM_5 = ""
+    COL_048_BLLUE_TEAM_TOP_ITEM_6 = ""
+    COL_049_BLLUE_TEAM_TOP_ITEM_VISION = ""
+
+    COL_050_BLLUE_TEAM_JNG_ITEM_1 = ""
+    COL_051_BLLUE_TEAM_JNG_ITEM_2 = ""
+    COL_052_BLLUE_TEAM_JNG_ITEM_3 = ""
+    COL_053_BLLUE_TEAM_JNG_ITEM_4 = ""
+    COL_054_BLLUE_TEAM_JNG_ITEM_5 = ""
+    COL_055_BLLUE_TEAM_JNG_ITEM_6 = ""
+    COL_056_BLLUE_TEAM_JNG_ITEM_VISION = ""
+
+    COL_057_BLLUE_TEAM_MID_ITEM_1 = ""
+    COL_058_BLLUE_TEAM_MID_ITEM_2 = ""
+    COL_059_BLLUE_TEAM_MID_ITEM_3 = ""
+    COL_060_BLLUE_TEAM_MID_ITEM_4 = ""
+    COL_061_BLLUE_TEAM_MID_ITEM_5 = ""
+    COL_062_BLLUE_TEAM_MID_ITEM_6 = ""
+    COL_063_BLLUE_TEAM_MID_ITEM_VISION = ""
+
+    COL_064_BLLUE_TEAM_ADC_ITEM_1 = ""
+    COL_065_BLLUE_TEAM_ADC_ITEM_2 = ""
+    COL_066_BLLUE_TEAM_ADC_ITEM_3 = ""
+    COL_067_BLLUE_TEAM_ADC_ITEM_4 = ""
+    COL_068_BLLUE_TEAM_ADC_ITEM_5 = ""
+    COL_069_BLLUE_TEAM_ADC_ITEM_6 = ""
+    COL_070_BLLUE_TEAM_ADC_ITEM_VISION = ""
+
+    COL_070_BLLUE_TEAM_SUP_ITEM_1 = ""
+    COL_071_BLLUE_TEAM_SUP_ITEM_2 = ""
+    COL_072_BLLUE_TEAM_SUP_ITEM_3 = ""
+    COL_073_BLLUE_TEAM_SUP_ITEM_4 = ""
+    COL_074_BLLUE_TEAM_SUP_ITEM_5 = ""
+    COL_075_BLLUE_TEAM_SUP_ITEM_6 = ""
+    COL_076_BLLUE_TEAM_SUP_ITEM_VISION = ""
+
+    COL_077_RED_TEAM_TOP_ITEM_1 = ""
+    COL_078_RED_TEAM_TOP_ITEM_2 = ""
+    COL_079_RED_TEAM_TOP_ITEM_3 = ""
+    COL_080_RED_TEAM_TOP_ITEM_4 = ""
+    COL_081_RED_TEAM_TOP_ITEM_5 = ""
+    COL_082_RED_TEAM_TOP_ITEM_6 = ""
+    COL_083_RED_TEAM_TOP_ITEM_VISION = ""
+
+    COL_084_RED_TEAM_JNG_ITEM_1 = ""
+    COL_085_RED_TEAM_JNG_ITEM_2 = ""
+    COL_086_RED_TEAM_JNG_ITEM_3 = ""
+    COL_087_RED_TEAM_JNG_ITEM_4 = ""
+    COL_088_RED_TEAM_JNG_ITEM_5 = ""
+    COL_089_RED_TEAM_JNG_ITEM_6 = ""
+    COL_090_RED_TEAM_JNG_ITEM_VISION = ""
+
+    COL_091_RED_TEAM_MID_ITEM_1 = ""
+    COL_092_RED_TEAM_MID_ITEM_2 = ""
+    COL_093_RED_TEAM_MID_ITEM_3 = ""
+    COL_094_RED_TEAM_MID_ITEM_4 = ""
+    COL_095_RED_TEAM_MID_ITEM_5 = ""
+    COL_096_RED_TEAM_MID_ITEM_6 = ""
+    COL_097_RED_TEAM_MID_ITEM_VISION = ""
+
+    COL_098_RED_TEAM_ADC_ITEM_1 = ""
+    COL_099_RED_TEAM_ADC_ITEM_2 = ""
+    COL_100_RED_TEAM_ADC_ITEM_3 = ""
+    COL_101_RED_TEAM_ADC_ITEM_4 = ""
+    COL_102_RED_TEAM_ADC_ITEM_5 = ""
+    COL_103_RED_TEAM_ADC_ITEM_6 = ""
+    COL_104_RED_TEAM_ADC_ITEM_VISION = ""
+
+    COL_105_RED_TEAM_SUP_ITEM_1 = ""
+    COL_106_RED_TEAM_SUP_ITEM_2 = ""
+    COL_107_RED_TEAM_SUP_ITEM_3 = ""
+    COL_108_RED_TEAM_SUP_ITEM_4 = ""
+    COL_109_RED_TEAM_SUP_ITEM_5 = ""
+    COL_110_RED_TEAM_SUP_ITEM_6 = ""
+    COL_111_RED_TEAM_SUP_ITEM_VISION = ""
+
+    COL_112_BLUE_TEAM_TOP_RUNE_01 = ""
+    COL_113_BLUE_TEAM_TOP_RUNE_02 = ""
+    COL_114_BLUE_TEAM_JNG_RUNE_01 = ""
+    COL_115_BLUE_TEAM_JNG_RUNE_02 = ""
+    COL_116_BLUE_TEAM_MID_RUNE_01 = ""
+    COL_117_BLUE_TEAM_MID_RUNE_02 = ""
+    COL_118_BLUE_TEAM_ADC_RUNE_01 = ""
+    COL_119_BLUE_TEAM_ADC_RUNE_02 = ""
+    COL_120_BLUE_TEAM_SUP_RUNE_01 = ""
+    COL_121_BLUE_TEAM_SUP_RUNE_02 = ""
+
+    COL_122_RED_TEAM_TOP_RUNE_01 = ""
+    COL_123_RED_TEAM_TOP_RUNE_02 = ""
+    COL_124_RED_TEAM_JNG_RUNE_01 = ""
+    COL_125_RED_TEAM_JNG_RUNE_02 = ""
+    COL_126_RED_TEAM_MID_RUNE_01 = ""
+    COL_127_RED_TEAM_MID_RUNE_02 = ""
+    COL_128_RED_TEAM_ADC_RUNE_01 = ""
+    COL_129_RED_TEAM_ADC_RUNE_02 = ""
+    COL_130_RED_TEAM_SUP_RUNE_01 = ""
+    COL_131_RED_TEAM_SUP_RUNE_02 = ""
+
+    COL_132_BLUE_TEAM_TOP_SUMMONER_01 = ""
+    COL_133_BLUE_TEAM_TOP_SUMMONER_02 = ""
+    COL_134_BLUE_TEAM_JNG_SUMMONER_01 = ""
+    COL_135_BLUE_TEAM_JNG_SUMMONER_02 = ""
+    COL_136_BLUE_TEAM_MID_SUMMONER_01 = ""
+    COL_137_BLUE_TEAM_MID_SUMMONER_02 = ""
+    COL_138_BLUE_TEAM_ADC_SUMMONER_01 = ""
+    COL_139_BLUE_TEAM_ADC_SUMMONER_02 = ""
+    COL_140_BLUE_TEAM_SUP_SUMMONER_01 = ""
+    COL_141_BLUE_TEAM_SUP_SUMMONER_02 = ""
+
+    COL_142_RED_TEAM_TOP_SUMMONER_01 = ""
+    COL_143_RED_TEAM_TOP_SUMMONER_02 = ""
+    COL_144_RED_TEAM_JNG_SUMMONER_01 = ""
+    COL_145_RED_TEAM_JNG_SUMMONER_02 = ""
+    COL_146_RED_TEAM_MID_SUMMONER_01 = ""
+    COL_147_RED_TEAM_MID_SUMMONER_02 = ""
+    COL_148_RED_TEAM_ADC_SUMMONER_01 = ""
+    COL_149_RED_TEAM_ADC_SUMMONER_02 = ""
+    COL_150_RED_TEAM_SUP_SUMMONER_01 = ""
+    COL_151_RED_TEAM_SUP_SUMMONER_02 = ""
+
+    COL_152_BLUE_TEAM_RIFT_HERALDS = -1
+    COL_153_BLUE_TEAM_VOID_GRUBS = -1
+    COL_154_BLUE_TEAM_INHIBITORS = -1
+
+    COL_155_RED_TEAM_RIFT_HERALDS = -1
+    COL_156_RED_TEAM_VOID_GRUBS = -1
+    COL_157_RED_TEAM_INHIBITORS = -1
 
     # ======================================= #
     # List and Definitions of XPath variables #
@@ -228,5 +376,73 @@ class Parser:
             result[0] = sum(cs[5:])
 
         return result
+    
+    def get_team_total_cs_per_minute(self,winning_team,cs_list):
+        levels_temp = cs_list[1:]
+        cs = []
+        result = [-1,-1]
 
-        
+        for x in levels_temp:
+            cs.append(float(x[1].replace("/m","")))
+
+
+        if winning_team == self.VICTORY_BLUE_TEAM or winning_team == self.DEFEAT_BLUE_TEAM:
+            result[0] = sum(cs[:5])
+            result[1] = sum(cs[5:])
+        elif winning_team == self.VICTORY_RED_TEAM or winning_team == self.DEFEAT_RED_TEAM:
+            result[1] = sum(cs[:5])
+            result[0] = sum(cs[5:])
+
+        return result
+    
+    def get_total_game_time_minutes(self,cs_list):
+        cs_temp = cs_list[1:]
+        total_game_time = int(cs_temp[0][0])
+        cs_per_minute = float(cs_temp[0][1].replace("/m",""))
+
+        return total_game_time/cs_per_minute
+    
+    def get_team_champion_list(self,winning_team,champ_list):
+        temp = champ_list[1:]
+        result = [-1,-1]
+        if winning_team == self.VICTORY_BLUE_TEAM or winning_team == self.DEFEAT_BLUE_TEAM:
+            result[0] = temp[:5]
+            result[1] = temp[5:]
+        elif winning_team == self.VICTORY_RED_TEAM or winning_team == self.DEFEAT_RED_TEAM:
+            result[1] = temp[:5]
+            result[0] = temp[5:]
+    
+        return result
+    
+    def get_team_item_list(self,winning_team,item_list):
+        result = [-1,-1]
+        if winning_team == self.VICTORY_BLUE_TEAM or winning_team == self.DEFEAT_BLUE_TEAM:
+            result[0] = item_list[:5]
+            result[1] = item_list[5:]
+        elif winning_team == self.VICTORY_RED_TEAM or winning_team == self.DEFEAT_RED_TEAM:
+            result[1] = item_list[:5]
+            result[0] = item_list[5:]
+    
+        return result
+    
+    def get_team_runes_list(self,winning_team,rune_list):
+        result = [-1,-1]
+        if winning_team == self.VICTORY_BLUE_TEAM or winning_team == self.DEFEAT_BLUE_TEAM:
+            result[0] = rune_list[:5]
+            result[1] = rune_list[5:]
+        elif winning_team == self.VICTORY_RED_TEAM or winning_team == self.DEFEAT_RED_TEAM:
+            result[1] = rune_list[:5]
+            result[0] = rune_list[5:]
+
+        return result
+    
+    def get_team_summoner_list(self,winning_team,summoner_list):
+        result = [-1,-1]
+        if winning_team == self.VICTORY_BLUE_TEAM or winning_team == self.DEFEAT_BLUE_TEAM:
+            result[0] = summoner_list[:5]
+            result[1] = summoner_list[5:]
+        elif winning_team == self.VICTORY_RED_TEAM or winning_team == self.DEFEAT_RED_TEAM:
+            result[1] = summoner_list[:5]
+            result[0] = summoner_list[5:]
+
+        return result
