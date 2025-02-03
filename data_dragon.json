@@ -1,0 +1,38 @@
+{
+    "champion": 
+    [
+        {
+            "id": 1,
+            "name": "Aatrox",
+            "title": "World Ender"
+        },
+        {
+            "id": 2,
+            "name": "Master Yi",
+            "title": "Wuju Swordsman"
+        },
+        {
+            "id": 3,
+            "name": "Illaoi",
+            "title": "Kraken Priestes"
+        }
+    ],
+    "summoner_spell": 
+    [
+        {
+            "id": 1,
+            "name": "Aatrox",
+            "title": "World Ender"
+        },
+        {
+            "id": 2,
+            "name": "Master Yi",
+            "title": "Wuju Swordsman"
+        },
+        {
+            "id": 3,
+            "name": "Illaoi",
+            "title": "Kraken Priestes"
+        }
+    ]
+}
