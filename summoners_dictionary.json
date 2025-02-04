@@ -1,0 +1,18 @@
+{
+    "Barrier": 0,
+    "Cleanse": 1,
+    "Flash": 6,
+    "Flee": 3,
+    "Ignite": 4,
+    "Exhaust": 5,
+    "Ghost": 7,
+    "Heal": 8,
+    "Clarity": 9,
+    "To the King!": 10,
+    "Poro Toss": 11,
+    "Smite": 12,
+    "Mark": 14,
+    "Teleport": 15,
+    "Placeholder": 16,
+    "Placeholder and Attack-Smite": 17
+}
