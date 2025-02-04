@@ -2,9 +2,10 @@
     "champion": 
     [
         {
-            "id": 1,
+            "id": 266,
             "name": "Aatrox",
-            "title": "World Ender"
+            "tags": ["Fighter", "WorldEnder"],
+            "info": {"attack": 20, "defense": 20, "magic": 20, "difficulty": 30}
         },
         {
             "id": 2,
