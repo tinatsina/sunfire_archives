@@ -8,15 +8,15 @@
 ## Built With
 
 - `Selenium` for scrapping data.
-- `Pandas` for cleaning the data and making the final csv.
+- `Pandas` for cleaning the data and making the final CSV.
 - `Data Wrangler` for a birds eye view of the data.
 
 ## Getting Started
 
-You can see the makeup of the dataset from the 3 folders champ, data and scripts
+You can see the makeup of the dataset from the 3 folders champ, data and scripts.
 
-- `data` - contains dictionary and RIOT data dragon files as JSON
-- `champ` - champion information from RIOT data dragon
+- `data` - contains dictionary and RIOT data dragon files as JSON.
+- `champ` - champion information from RIOT data dragon.
 - `scrpits` - the scripts used to make, clean and scrap for the dataset.
 
 ## Authors
