@@ -23,9 +23,9 @@ You can see the makeup of the dataset from the 3 folders champ, data and scripts
 
 👤 **Tinaye 天蓝 Wolfgang**
 
-- GitHub: [@githubhandle](https://github.com/tinatsina)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tinayetsina/)
-- Email: [Email](mailto:tinaye.tsinakwadi@uni.li)
+- GitHub: [tinatsina](https://github.com/tinatsina)
+- LinkedIn: [tinayetsina](https://www.linkedin.com/in/tinayetsina/)
+- Email: [tinaye.tsinakwadi@uni.li](mailto:tinaye.tsinakwadi@uni.li)
 
 ## 🤝 Contributing
 
